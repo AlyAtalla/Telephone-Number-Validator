@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.phone-screen {
+  background-color: #000;
+  border: 16px solid #333;
+  border-radius: 36px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 320px;
+  height: 600px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.phone-screen::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #333;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.phone-screen::after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: #333;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#user-input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #222;
+  color: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#results-div {
+  margin-top: 10px;
+  font-size: 16px;
+}
